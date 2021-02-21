@@ -22,10 +22,10 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatCord'));
+    socket.emit('message', formatMessage(botName, 'Bem-vindo ChatCord'));
 
     // Broadcast when a user connects
-    socket.broadcast.to(user.room).emit('message', formatMessage(botName, `${user.username} has join the chat`));
+    socket.broadcast.to(user.room).emit('message', formatMessage(botName, `${user.username} entrou na sala`));
 
     io.to(user.room).emit('roomUsers', {
       room: user.room,
@@ -47,7 +47,7 @@ io.on('connection', socket => {
     const user = userLeave(socket.id);
 
     if (user) {
-      io.to(user.room).emit('message', formatMessage(botName, `${user.username} has left the chat`));
+      io.to(user.room).emit('message', formatMessage(botName, `${user.username} saiu da sala`));
 
       io.to(user.room).emit('roomUsers', {
         room: user.room,
