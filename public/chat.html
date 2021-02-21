@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
   <title>ChatCord App</title>
 </head>
@@ -13,13 +14,13 @@
 <body>
   <div class="chat-container">
     <header class="chat-header">
-      <h1><i class="fas fa-smile"></i> ChatCord</h1>
-      <a href="index.html" class="btn" id="leave-btn">Sair da Sala</a>
+      <h1><i class="fas fa-comment-dots"></i> ChatCord</h1>
+      <a href="index.html" class="btn nes-btn is-primary" id="leave-btn">Sair da Sala</a>
     </header>
     <main class="chat-main">
       <div class="chat-sidebar">
-        <h3><i class="fas fa-comments"></i> Nome da Sala:</h3>
-        <h2 id="room-name"></h2>
+        <h3><i class="fas fa-comments"></i> Sala:</h3>
+        <h2 class="nes-badge"><span class="is-success" id="room-name"></span></h2>
         <h3><i class="fas fa-users"></i> Usuários</h3>
         <ul id="users">
         </ul>
@@ -28,8 +29,8 @@
     </main>
     <div class="chat-form-container">
       <form id="chat-form">
-        <input id="msg" type="text" placeholder="Digite uma mensagem" required autocomplete="off" />
-        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+        <input id="msg" class="nes-input" type="text" placeholder="Digite uma mensagem" required autocomplete="off" />
+        <button class="btn nes-btn is-primary"><i class="fas fa-paper-plane"></i> Send</button>
       </form>
     </div>
   </div>

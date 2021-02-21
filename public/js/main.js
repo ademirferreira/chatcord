@@ -73,7 +73,11 @@ function outputUsers(users) {
   userList.innerHTML = '';
   users.forEach((user) => {
     const li = document.createElement('li');
-    li.innerText = user.username;
+    li.classList.add('nes-badge')
+    const span = document.createElement('span');
+    span.classList.add('is-primary')
+    li.appendChild(span)
+    span.innerText = user.username;
     userList.appendChild(li);
   });
 }

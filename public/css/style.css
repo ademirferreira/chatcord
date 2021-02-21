@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
 	--dark-color-a: #667aff;
@@ -15,7 +15,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Press Start 2P', cursive;
 	font-size: 16px;
 	background: var(--light-color);
 	margin: 20px;
@@ -35,7 +35,7 @@ a {
 	background: var(--light-color);
 	color: var(--dark-color-a);	
 	border-radius: 5px;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 /* Chat Page */
@@ -72,25 +72,25 @@ a {
 }
 
 .chat-sidebar h2 {
-	font-size: 20px;
-	background: rgba(0, 0, 0, 0.1);
+	font-size: 15px;
+	text-transform: capitalize;
 	padding: 10px;
 	margin-bottom: 20px;
 }
 
-.chat-sidebar h3 {
+.chat-sidebar h3 {	
 	margin-bottom: 15px;
 }
 
 .chat-sidebar ul li {
 	padding: 10px 0;
+	text-transform: capitalize;
 }
 
 .chat-messages {
 	padding: 30px;
 	max-height: 390px;
-	overflow-y: scroll;
-	
+	overflow-y: scroll;	
 }
 
 .chat-messages .message {
@@ -128,17 +128,6 @@ a {
 	padding: 10px;
 	height: 40px;
 	flex: 1;
-	text-transform: lowercase;	
-  border-radius: 20px;
-  border: 1px solid #2d9fd9;
-}
-
-.chat-form-container .btn {
-  cursor: pointer;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  border: 1px solid #2d9fd9;
 }
 
 /* Join Page */
@@ -181,26 +170,11 @@ a {
 	padding: 10px;
 	height: 40px;
 	width: 100%;
-	text-transform: lowercase;
-	-webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  border: 1px solid #2d9fd9;
-}
-
-.join-main input[type='text'] {	
-	outline: none;
-	border: 1px solid #a0d18c;
-	color: var(--dark-color-a);
 }
 
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
-	-webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  border: 1px solid #2d9fd9;
 }
 
 .join-main .btn:hover {
